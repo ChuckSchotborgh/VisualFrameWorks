@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--Chuck Schotborgh Visual Frameworks 09/2011 project 1 -->
+<!-- HTML TAG -->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="I Forgive APP (beta)" />   
+        <meta name="keywords" content="HTML5, mobile development, Full Sail University" />
+        <!-- <meta name="robots" content="index, follow" />-->
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <meta name="viewport" content="target-density=device-dpi" />
+        <meta name="HandheldFreindly" content="true" />     
+        <meta name="MobileOptimized" content="320" />
+        
+        
+        <title>I Forgive APP (beta)</title>
+        
+        <!-- <link href="css/styles.css" rel="stylesheet" type="text/css" />-->
+        <!-- <script src="js/main.js" type="text/javascript"></script>-->
+        
+    </head>
+    <!-- Document Body -->
+     <body>
+      <h1>Forgive Someone Senario</h1>
+        <p>A social, relational, and interpersonal application that allows one to forgive in fun comical manner!</p>
+            <h2>Forgive someone now</h2>
+    <form action="#" method="get">   
+        <fieldset>
+            <legend>Information</legend>
+            <ul>
+                <li><label for="fname">First Name:</label><input type="text" id="fname" /></li>
+                <li><label for="pword">Password:</label><input type="password" id="pword" /></li>
+                <li><label for"cword">Confirm Password (Disabled):</label><input type="password" id="cword" disabled /></li>
+                <li><label for="email">Email:</label><input email="text" id="email" placeholder="example@email.com" /></li>
+                <li><label for="url">Fav Website:</label><input type="url" id="url" placeholder="www.google.com"/></li>
+            </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Questions</legend>
+            <ul>
+                <li>
+                    Check your favorites:
+                    <ul>
+                        <li><input type="checkbox" checked value="Pepsi"id="pepsi"/><label for="pepsi">Pepsi</label></li>
+                        <li><input type="checkbox" value="Pepsi" id="pepsi"/><label for="pepsi">Pepsi</label></li>
+                        <li><input type="checkbox" value="Pepsi" id="pepsi"/><label for="pepsi">Pepsi</label></li>
+                        <li><input type="checkbox" value="Pepsi" id="pepsi"/><label for="pepsi">Pepsi</label></li>
+                    </ul>
+                </li>
+            <li>Are you male or female?:
+                    <ul>
+                        <li><input type="radio" value= "Male" id="male"name="sex"/><label for="male">Male</label></li>
+                        <li><input type="radio" value= "Female" id= "female" name="sex" /><label for="female">Female</label></li>
+                        <li><input type="radio" value= "Unknown" id= "unknown" name="sex" /><label for="unknown">I don't want you to know</label></li>
+                    </ul>
+                </li>            
+                    <li>
+                        <label for="travel"> Preferred Method of travel</label>
+                        <select id="travel">
+                            <optgroup label="Self Powered Modes">
+                                <option value= "walk">Walk</option>
+                                <option value= "Bike">bike</option>
+                            </optgroup>
+                            <optgroup label="Machine Powered Modes">
+                                <option value= "Car">Car</option>
+                                <option value= "Bus">Bus</option>
+                                <option value= "Train">Train</option>
+                                <option value= "Plane">Plane</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li><label for="comments"> What is your Favorite Vacation?</label><textarea id="coments"></textarea></li>
+                    <li><input type="hidden" value="true"/></li>
+                 </ul>
+            <fieldset>
+            <input type="submit" value="send it already!" />
+        </form>
+    </body>
+</html>

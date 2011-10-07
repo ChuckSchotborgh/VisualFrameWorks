@@ -1,0 +1,152 @@
+body {
+	background-color: #242424;
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 1em;
+	margin-top: 0.1em;
+	margin-right: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 0.1em
+	}
+form {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	background-color: #343434;
+	}
+h1{
+	color: #5EDEFF;
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 2em;
+	}
+h2 {
+	color: #5EDEFF;
+	}
+h3 {
+	color: #DEDECA;
+	}
+input {	
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 1em
+	}
+li {	
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 1em
+	}
+ol {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	list-style-type: decimal;	
+	list-style-position: outside
+	}
+select {	
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 1em
+	}
+table {
+	color: #FFFFFF
+	}
+td, th {	
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 1em
+	}
+textarea {
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	font-size: 1em
+	}
+ul {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	list-style-type: none;
+	list-style-position: outside
+	}
+.BulletBackgroundColor {
+	color: #FFFFFF
+	}
+.DataColor {
+	color: #DEDECA
+	}
+.legend {	
+	font-family: Verdana, Georgia, "Times New Roman", Times, serif;	
+	font-size: .75em;	
+	color: #999999
+	}
+.footer {	
+	font-family: Verdana, Georgia, "Times New Roman", Times, serif;	
+	font-size: .75em;	
+	color: #999999
+	}
+.FormBackgroundColor {
+	color: #F00
+	}
+.ImageTitleColor {
+	color: #CCCCCC
+	}
+.LabelColor {
+	color: #CCCCCC
+	}
+.ListColorEven {
+	color: #CCCCCC
+	}
+.ListFooterColor {
+	color: #333333
+	}
+.ListHeaderColor {
+	color: #333333
+	}
+.ListColorOdd {
+	color: #DEDECA
+	}
+.ListTitleColor {
+	color: #CCCCCC
+	}
+.NavigationBackgroundColor {
+	color: #0FF
+	}
+.NavigationColor {
+	color: #CCCCCC
+	}
+.NewsDataColor {
+	color: #DEDECA
+	}
+.StoryTitle {
+	color: #000000;
+	font-weight: bold
+	}
+.StoryContentColor {
+	color: #000000
+	}
+.TitleColor {
+	color: #5EDEFF
+	}body.sub {
+	margin: 0.1em;
+	}
+tr.ListHeaderColor th {
+	text-align: center;
+	}.small {
+	font-size: 50%;
+	}
+a:link {
+	color: #0CF;
+	}
+a:visited {
+	color: #CF0;
+	}
+body,td,th {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #666;
+	font-size: 1em;
+	}
+a {
+	font-size: 14px;
+}
+a:hover {
+	color: #FFF;
+}
+a:active {
+	color: #0FF;
+}
+strong {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+br {
+	font-family: Georgia, Times New Roman, Times, serif;
+}

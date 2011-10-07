@@ -1,0 +1,2 @@
+git@github.com:ChuckSchotborgh/VisualFrameWorks.git
+https://ChuckSchotborgh@github.com/ChuckSchotborgh/VisualFrameWorks.git

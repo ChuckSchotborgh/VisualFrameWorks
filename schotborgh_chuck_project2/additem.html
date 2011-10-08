@@ -15,37 +15,35 @@
         
         <title>I Forgive APP (beta)</title>
          <link href="css/styles.css" rel="stylesheet" type="text/css" />
-
         
     </head>
     <!-- Document Body -->
      <body>
             <fieldset>
-                <h1>I Forgive APP (beta)</h1>
+            <header class="LabelColor"><span><h1>I Forgive APP (beta)</h1></span></header>                                
                 <p><h3>A social, relational, and interpersonal application that allows one to forgive in a fun comical manner!</h3></p>
             </fieldset> 
         <form action="#" method="get">
             <fieldset>
-                    <span><a href="#.html">Clear Stored Data</a></span>  <span><a href="#.html">Display Data</a></span>
-                    
+                    <span><a href="#.html">Clear Stored Data</a></span>
+                    <span><a href="#.html">Display Data</a></span>
             </fieldset> 
             <fieldset>
               <legend class="TitleColor"><strong>Login Information</strong></span></legend>
                 <ul> 
-                    <li class="DataColor"><span><label for="uname" id="UserLabel">User Name:</label><br><input name="UserName" type="text" id="uname"></span></li>
-                    <li class="DataColor"><span><label for="pword" id="PwdLabel">Password:</label><br><input type="password" id="pword"></span></li>
-                    <li class="DataColor"><span><label for="email">Email:</label><br><input email="text" id="email" placeholder="example@email.com"></span></li>
-                    <li class="DataColor"><span><label for="url">Post to My Blog or Website:</label><br><input name="" type="text" id="url" placeholder="www.google.com"></span></li>
-              </ul>
+                    <li class="DataColor"><span><p><label for="uname">User Name:</label><br><input name="UserName" type="text" id="uname"></p></span></li>
+                    <li class="DataColor"><span><p><label for="pword">Password:</label><br><input type="password" id="pword"></p></span></li>
+                    <li class="DataColor"><span><p><label for="email">Email:</label><br><input email="text" id="email" placeholder="example@email.com"></p></span></li>
+                    <li class="DataColor"><span><p><label for="url">Post to My Blog or Website:</label><br><input type="text" id="url" placeholder="www.google.com"></p></span></li>
+                    <li class="DataColor"><span><p><label for="date">Date Added:</label><br><input type="date" id="date"></p></span></li>
+                </ul>
             </fieldset>
             <fieldset>
                 <legend class="TitleColor"><span><strong>Build Senario</strong></span></legend>
-                    <label class="LabelColor"><span><label for="comments" ><strong> Describe your feelings about the situation</strong></span></label>
-                        <span class="DataColor"><br><textarea id="coments" style="margin-top: 2px; margin-bottom: 2px; height: 26px; margin-left: 2px; margin-right: 2px; width: 155px; "></textarea></span>
-                        <br><span class="DataColor"><br></span></li>
+                    <label class="LabelColor"><span><p><label for="comments" ><strong> Describe your feelings about the situation:</strong></p></span></label>
+                        <span class="DataColor"><p><label for="notes"></label><textarea id="notes"></textarea></span></p>
                     <Label class="LabelColor"><strong><label for="forgive">Choose Metaphorical Method to process your forgiveness:</label></strong></li>
-
-            <select id="forgive">
+            <select id="group">
                 <optgroup label="Violent Aproach Modes">
                     <option value="Explosions">Explosions</option>
                     <option value="Burning">Burning</option>
@@ -63,17 +61,19 @@
                     <option value="Addictive Behavoir" selected>Addictive Behavoir</option>
                 </optgroup>
             </select>
+                <br><br>
             <fieldset>
-            <legend class="LabelColor"><span><strong>Scale of 1-10?</strong></span></legend>
-                    <span class="DataColor"><span><label for="LOEP">Level of Emotional Pain</label><br><input type="range" min="70" max="140" id="loep"></span>
+            <legend class="LabelColor"><span><strong>Level of Emotional Pain Scale of 1-10!</strong></span></legend>
+                    <span class="ListColorOdd"><span><label for="LOEP">Range<small>|1|2|3|4|5|6|7|8|9|10|</small></label><br><input type="range" min="1" max="10" id="loep"></span>
             </fieldset>
-                    <label class="LabelColor"><strong>Rate your level of rage:</strong></label>
+            <fieldset>
+            <legend class="LabelColor"><span><strong>Panic level of rage:</strong></span></legend>                
                 <ul>
-                    <li class="DataColor"><input type="checkbox" value="Red Level" id="Red Level"><label for="Red Level">So angry my eyes are bulging Red!</label></li>
-                    <li class="DataColor"><input type="checkbox" value="yellow Level" id="yellow Level"><label for="Yellow Level">So angry I want to get even!</label></li>
-                    <li class="DataColor"><input type="checkbox" value="Green Level" id="Green Level"><label for="Green Level">So angry I want to use a few choice words!</label></li>
+                    <li class="DataColor"><input type="checkbox" value="fav" id="Panic"><label for="level">So angry my eyes are bulging Red!</label></li>
                 </ul>
-                    <label class="LabelColor"><strong>Who or what offended you?:</strong></label>
+            </fieldset>
+            <fieldset>            
+            <legend class="LabelColor"><span><strong>Who or what are you bitter towards?</strong></span></legend>                
                 <ul>
                     <li class="DataColor"><input type="radio" value="Unknown" id="unknown" name="sex"><label for="unknown">I wish I knew who or what it was!</label></li>
                     <li class="DataColor"><input type="radio" value="Male" id="male" name="sex"><label for="male">Male</label></li>
@@ -83,10 +83,10 @@
             <fieldset>
                 <legend class="TitleColor"><span><strong>Go for it!</strong></span></legend>
                 <ul>
-                    <input type="submit" value=" I'm Ready to forgive!" />
+                    <input type="submit" value="I'm Ready to forgive!"id="submit" />
                 </ul>
             </fieldset>
-            <br><br>
+            <p></p>
         </form>
         <script src="js/main.js" type="text/javascript"></script>
     </body>

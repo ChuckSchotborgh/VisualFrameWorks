@@ -5,14 +5,14 @@
 
 //Wait until the dom is ready.
 window.addEventListener("DOMContentLoaded", function(){
-
+	alert(localStorage.value(0))
 	//getElementById Function
 	function $(x){
 		var theElement = documnet.getElemantById(x);
 		return theElement;
 	}
 	//Create a select field element and populate with options
-	function makeCats(){
+	function makeCats(){c
 		var fromTag = document.getElementsByTagName("form"),
 			selectLi = $('select'),
 			makeSelect = document.createElement('select');
@@ -26,6 +26,23 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		selectLi.appendChild(makeSelect);
 	}
+	//Find value of selected radio button.
+	function getSelectedRadio(){
+		var radios = document.forms[0].sex;
+		for(var i=0; i<radios.length; i++){
+			if(radios[i].checked]{
+				sexValue = radios[i].value;
+			}
+		}
+	}
+	function getCheckboxValue(){
+		if($('fav').checked){
+			favoriteValue = $('fav').value;
+		} else{
+			favoriteValue = "No"
+		}
+	}
+	
 	function storeData(){
 		var id = math.floor(math.random()*10000001);
 		//Gather up all form field values and store in an object.
@@ -39,28 +56,30 @@ window.addEventListener("DOMContentLoaded", function(){
 			item.notes		= ["Notes", $('notes').value];
 			item.group		= ["Group", $('groups').value];
 			item.loep		= ["Range", $('loep').value];
-			//item.unknown	= ["Sex", sexValue];
-			//item.level	= ["Level", levelValue];
+			item.sex		= ["Sex", sexValue];
+			item.fav		= ["Panic", favoriteValue];
 		//Save data into Local Storage; Use Stringify to convert our object to a string.
 		localStorage.setItem(id, JSON.Strinify(item));
 		alert("Contact Saved!");
-		}
-			item.group
-		localStorage.setItem("test", "hello");
-		alert(localStorage.length)
 	}
+
 	//Variable defaults
-	var contactGroups = ["--Choose A Group--", "Frends", "Family" "Work"];
+	var contactGroups = ["--Choose A Group--", "Frends", "Family" "Work"],
+		sexValue,
+		favoriteValue = "No"
+	;
 	makeCats();
 
 	//Set Link & Submit Click Events
+	/*
 	var displaylink =$('displayLink');
 	displayLink.addEventListener("click", getData);
 	var clearLink =$('clear');
-	clearLink.addEventListener("click", clearLocal);
+	clearLink.addEventListener("click", clearLocal);*/
 	var save = $('submit');
 	save.addEventListener("click", storeData);
 });
+
 
 
 

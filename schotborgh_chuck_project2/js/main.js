@@ -62,7 +62,30 @@ window.addEventListener("DOMContentLoaded", function(){
 		localStorage.setItem(id, JSON.Strinify(item));
 		alert("Contact Saved!");
 	}
-
+function getData(){
+	//Write Data from Local Storage to the Browser.
+	var makeDiv = document.createElement('div');
+	makeDiv.setAttribute("id", "items");
+	var makeList = document.createElement('ul');
+	makeDiv.appendChild(makeList);
+	document.body.appendChild(makeDiv);
+	for(var i=0, len=localStorage.length; i<len;i++){
+		var makeli = document.createElement('li');
+		makelist.appendChild(makeli);
+		var key = localStorage.key(i);
+		var value = localStorage.getItem(key);
+		//convert the string from local staorage value back to an object by using JSON.parse
+		var obj = JSON.parse(value);
+		var makeSubList = document.createElement('ul');
+		makeli.appendChild(makeSubList);
+		for(var n in obj){
+			var makeSubli = document.createElement('li');
+			makeSubList.appendChild(makeSubli);
+			var optSubText = obj[n][0]+" "+obj[n][1];
+			makeSubli.innerHTML = optSubText;
+		}
+	}
+}
 	//Variable defaults
 	var contactGroups = ["--Choose A Group--", "Frends", "Family" "Work"],
 		sexValue,

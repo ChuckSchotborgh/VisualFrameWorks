@@ -1,23 +1,24 @@
 /*Activity 2
-Visual Frameworks (VFW)
-Mobile Development
-Chuck Schotborgh*/
-//Wait until the dom is ready.
+ Visual frameworks (VFW)
+ Mobile Development
+ Full Sail University
+ChuckSchotborgh*/
+
 window.addEventListener("DOMContentLoaded", function(){
 
 	
-	//getElementById Function
+	/*getElementById Function*/
 	function $(x){
 		var theElement = document.getElementById(x);
 		return theElement;
 	}
 	
-	//Create a select field element and populate with options
+	/*Create a select field element and populate with options*/
 	function makeCats(){
 		var formTag = document.getElementsByTagName("form");
-			selectLi = $('select');
+			selectLi = $('select'),
 			makeSelect = document.createElement('select');
-			makeSelect.setAttrbute("id", "groups");
+			makeSelect.setAttribute("id", "groups");
 		for(var i=0, j=contactGroups.length; i<j; i++){
 			var makeOption = document.createElement('option');
 			var optText = contactGroups[i];
@@ -28,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		selectLi.appendChild(makeSelect);
 	}
 	
-	//Find value of selected radio button.
+	/*Find value of selected radio button.*/
 	function getSelectedRadio(){
 		var radios = document.forms[0].sex;
 		for(var i=0; i<radios.length; i++){
@@ -68,8 +69,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	function storeData(){
 		var id 				= math.floor(math.random()*10000001);
-		//Gather up all form field values and store in an object.
-		//Object properties contain array with the from label input value.
+		/*Gather up all form field values and store in an object.
+		/*Object properties contain array with the from label input value.*/
 		getSelectedRadio();
 		getCheckboxValue();
 		var item			= {};
@@ -81,7 +82,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			item.favorite		= ["Is a favorite", favoriteValue];
 			item.date		= ["Date", $('date').value];
 			item.notes		= ["Notes", $('notes').value];
-		//Save data into Local Storage; Use Stringify to convert our object to a string.
+		/*Save data into Local Storage; Use Stringify to convert our object to a string.*/
 		localStorage.setItem(id, JSON.Stringify(item));
 		alert("Contact Saved!");
 	}
@@ -92,7 +93,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			alert("There is no data in Local Storage.");
 		}
 		
-		//Write Data from Local Storage to the Browser.
+		/*Write Data from Local Storage to the Browser.*/
 		var makeDiv = document.createElement('div');
 		makeDiv.setAttribute("id", "items");
 		var makeList = document.createElement('ul');
@@ -104,7 +105,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			makelist.appendChild(makeli);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
-			//convert the string from local storage value back to an object by using JSON.parse
+			/*convert the string from local storage value back to an object by using JSON.parse*/
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeli.appendChild(makeSubList);
@@ -126,24 +127,24 @@ function clearLocal(){
 		window.location.reload();
 		return false;
 	}
-	//Variable defaults
-	var contactGroups = ["--Choose A Group--", "Frends", "Family", "Work"],
+	/*Variable defaults*/
+	var contactGroups = ["--Choose A Group--", "Frends", "Family", "Work"];
 		sexValue,
 		favoriteValue = "No"
 	;
+	/*Run makeCats();*/
+	makeCats();
 
-
-	//Set Link & Submit Click Events
+	/*Set Link & Submit Click Events*/
 	var displaylink = $('displayLink');
 	displayLink.addEventListener("click", getData);
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal);
 	var save = $('submit');
-	save.addEventListener("click", storeData);//Changes to validate in week 3.
+	save.addEventListener("click", storeData);/*Changes to validate in week 3.*/
 	var radios = document.form[0].sex;
 	for (var i=0; i<radios.length; i++){
 		radios[i].addEventListener("click", getSelectedRadio);
 	}
-	//Run makeCats();
-	makeCats();
-}
+
+});

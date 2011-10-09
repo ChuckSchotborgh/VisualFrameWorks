@@ -5,23 +5,23 @@
 
 //Wait until the dom is ready.
 window.addEventListener("DOMContentLoaded", function(){
-	alert(localStorage.value(0))
+	alert(localStorage.value(0));
 	//getElementById Function
 	function $(x){
-		var theElement = documnet.getElemantById(x);
+		var theElement = document.getElementById(x);
 		return theElement;
 	}
 	//Create a select field element and populate with options
-	function makeCats(){c
+	function makeCats(){
 		var fromTag = document.getElementsByTagName("form"),
 			selectLi = $('select'),
 			makeSelect = document.createElement('select');
 			makeSelect.setAttrbute("id", "groups");
 		for(var i=0, j=contactGroups.length; i<j; i++){
 			var makeOption = document.createElement('option');
-			var optText =contactGroups[i];
+			var optText = contactGroups[i];
 			makeOption.setAttribute("value", optText);
-			makeOption.innerHTML = optText);
+			makeOption.innerHTML = optText;
 			makeSelect.appendChild(makeOption);
 		}
 		selectLi.appendChild(makeSelect);
@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	function getSelectedRadio(){
 		var radios = document.forms[0].sex;
 		for(var i=0; i<radios.length; i++){
-			if(radios[i].checked]{
+			if(radios[i].checked){
 				sexValue = radios[i].value;
 			}
 		}
@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			item.url		= ["Post to My Blog or Website", $('url').value];
 			item.date		= ["Date", $('date').value];
 			item.notes		= ["Notes", $('notes').value];
-			item.group		= ["Group", $('groups').value];
+			//item.group		= ["Group", $('groups').value];
 			item.loep		= ["Range", $('loep').value];
 			item.sex		= ["Sex", sexValue];
 			item.fav		= ["Panic", favoriteValue];
@@ -87,7 +87,7 @@ function getData(){
 	}
 }
 	//Variable defaults
-	var contactGroups = ["--Choose A Group--", "Frends", "Family" "Work"],
+	var contactGroups = ["--Choose A Group--", "Frends", "Family", "Work"],
 		sexValue,
 		favoriteValue = "No"
 	;

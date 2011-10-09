@@ -51,16 +51,14 @@ Chuck Schotborgh*/
 			getSelectedRadio();
 			getCheckboxValue();
 			var item			= {};
-				item.uname		= ["UserName", $('uname').value];
-				item.pword		= ["Password", $('pword').value];
+				item.group		= ["Group:", $('groups').value];
+				item.fname		= ["First Name:", $('fname').value];
+				item.lname		= ["Last Name:", $('lname').value];
 				item.email		= ["Email", $('email').value];
-				item.url		= ["Post to My Blog or Website", $('url').value];
+				item.sex		= ["Sex", sexValue];
+				item.favorite		= ["Is a favorite", favoriteValue];
 				item.date		= ["Date", $('date').value];
 				item.notes		= ["Notes", $('notes').value];
-				item.group		= ["Group", $('groups').value];
-				item.loep		= ["Range", $('loep').value];
-				item.sex		= ["Sex", sexValue];
-				item.fav		= ["Panic", favoriteValue];
 			//Save data into Local Storage; Use Stringify to convert our object to a string.
 			localStorage.setItem(id, JSON.Strinify(item));
 			alert("Contact Saved!");
@@ -95,10 +93,10 @@ Chuck Schotborgh*/
 	}
 	function clearLocal(){
 		if(localStorage.length === 0){
-			alert("There is no data to clear.")
+			alert("There is no data to clear.");
 		}else{
 			localStorage.Clear();
-			alert("All contacts are deleted!")
+			alert("All contacts are deleted!");
 			window.location.reload();
 			return false;
 		}
@@ -110,13 +108,10 @@ Chuck Schotborgh*/
 		makeCats();
 	
 		//Set Link & Submit Click Events
-	
-		var displaylink =$('displayLink');
-		displayLink.addEventListener("click", getData);/*
-		var clearLink =$('clear');
-		clearLink.addEventListener("click", clearLocal);*/
+		var displaylink = $('displayLink');
+		displayLink.addEventListener("click", getData);
+		var clearLink = $('clear');
+		clearLink.addEventListener("click", clearLocal);
 		var save = $('submit');
 		save.addEventListener("click", storeData);
-
-
-
+	}

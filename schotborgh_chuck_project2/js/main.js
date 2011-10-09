@@ -1,7 +1,8 @@
-//Activity 2
-//Visual Frameworks
-//Mobile Development
-//Chuck Schotborgh
+
+/*Activity 2
+Visual Frameworks
+Mobile Development
+Chuck Schotborgh*/
 
 	//Wait until the dom is ready.
 	window.addEventListener("DOMContentLoaded", function(){
@@ -44,9 +45,11 @@
 		}
 		
 		function storeData(){
-			var id = math.floor(math.random()*10000001);
+			var id 				= math.floor(math.random()*10000001);
 			//Gather up all form field values and store in an object.
 			//Object properties contain array with the from label input value.
+			getSelectedRadio();
+			getCheckboxValue();
 			var item			= {};
 				item.uname		= ["UserName", $('uname').value];
 				item.pword		= ["Password", $('pword').value];
@@ -114,6 +117,6 @@
 		clearLink.addEventListener("click", clearLocal);*/
 		var save = $('submit');
 		save.addEventListener("click", storeData);
-	});
+
 
 

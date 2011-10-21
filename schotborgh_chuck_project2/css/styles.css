@@ -1,27 +1,27 @@
 body {
-	background-color: #AAAAAA;
-	font-family: Georgia, "Times New Roman", Times, serif;	
-	font-size: 1em;
-	margin-top: 0.1em;
-	margin-right: 0.1em;
-	margin-bottom: 0.1em;
-	margin-left: 0.1em
-	}
+	width: auto;
+	border-top: solid 1px #8e8e8e;
+	background-image: url(../images/bkgrnd.jpg);
+	height: 100%;
+	font-size: 24px;
+	position: relative;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
 form {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 1em;
-	background-color: #aaaaaa;
-	}
+	}	
 h1{
-	color: #5EDEFF;
-	font-family: Georgia, "Times New Roman", Times, serif;	
-	font-size: 2em;
+	background-image:url(../images/hdr.png);
+	height: 44%;
+	height: auto;
 	}
 h2 {
 	color: #5EDEFF;
 	}
 h3 {
-	color: #DEDECA;
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	color: #5EDEFF;
 	}
 input {	
 	font-family: Georgia, "Times New Roman", Times, serif;	
@@ -29,20 +29,12 @@ input {
 	}
 li {	
 	font-family: Georgia, "Times New Roman", Times, serif;	
-	font-size: 1em
-	}
-ol {
-	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 1em;
-	list-style-type: decimal;	
-	list-style-position: outside
+	color: #DEDECA;
 	}
 select {	
 	font-family: Georgia, "Times New Roman", Times, serif;	
 	font-size: 1em
-	}
-table {
-	color: #FFFFFF
 	}
 td, th {	
 	font-family: Georgia, "Times New Roman", Times, serif;	
@@ -67,7 +59,7 @@ ul {
 .legend {	
 	font-family: Verdana, Georgia, "Times New Roman", Times, serif;	
 	font-size: .75em;	
-	color: #999999
+	color: #CCCCCC
 	}
 .footer {	
 	font-family: Verdana, Georgia, "Times New Roman", Times, serif;	
@@ -75,54 +67,16 @@ ul {
 	color: #999999
 	}
 .FormBackgroundColor {
-	color: #F00
+	color: #000
 	}
-.ImageTitleColor {
-	color: #CCCCCC
+.span {
+	color: #DEDECA;
 	}
 .LabelColor {
 	color: #CCCCCC
 	}
-.ListColorEven {
-	color: #CCCCCC
-	}
-.ListFooterColor {
-	color: #333333
-	}
-.ListHeaderColor {
-	color: #333333
-	}
-.ListColorOdd {
-	color: #DEDECA
-	}
-.ListTitleColor {
-	color: #CCCCCC
-	}
-.NavigationBackgroundColor {
-	color: #0FF
-	}
 .NavigationColor {
 	color: #CCCCCC
-	}
-.NewsDataColor {
-	color: #DEDECA
-	}
-.StoryTitle {
-	color: #000000;
-	font-weight: bold
-	}
-.StoryContentColor {
-	color: #000000
-	}
-.TitleColor {
-	color: #5EDEFF
-	}body.sub {
-	margin: 0.1em;
-	}
-tr.ListHeaderColor th {
-	text-align: center;
-	}.small {
-	font-size: 50%;
 	}
 a:link {
 	color: #0CF;
@@ -146,7 +100,9 @@ a:active {
 }
 strong {
 	font-family: Georgia, Times New Roman, Times, serif;
+	color: #DEDECA;
 }
-br {
+span{
 	font-family: Georgia, Times New Roman, Times, serif;
+	color: #DEDECA;
 }
